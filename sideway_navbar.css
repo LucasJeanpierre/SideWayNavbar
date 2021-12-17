@@ -1,0 +1,190 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a,
+.sidebar button {
+    font-weight: 500;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    transition-duration: 0.5s;
+    width: 100%;
+    z-index: 1000;
+    height: 75px;
+    text-align: left;
+}
+
+.dropdown-btn {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-container {
+    padding-left: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 0px;
+    transition: all 0.5s ease;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#topheader {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.5s;
+    z-index: 1000;
+}
+
+#topheader a {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    opacity: 1;
+    transition-duration: 0.5s;
+    pointer-events: all;
+    top: 5px;
+}
+
+.logocontainer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    pointer-events: none;
+}
+
+#topheader a img {
+    width: 100px;
+}
+
+#connection_status {
+    top: 70px;
+    left: 0px;
+}
+
+.container {
+    margin-top: 90px;
+}
+
+.sticky-top {
+    top: 80px !important;
+}
+
+@media screen and (max-width: 768px) {
+    #topheader a img {
+        width: 75px;
+    }
+    #openbtn {
+        font-size: 20px;
+        height: 50px;
+    }
+    #connection_status {
+        top: 50px;
+    }
+    .container {
+        margin-top: 67px;
+    }
+    .logocontainer {
+        top: 7px;
+    }
+    .sticky-top {
+        top: 60px !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #topheader a {
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}
+
+.sidebar a img {
+    width: 75px;
+}
+
+.sidebar a,
+.sidebar button {
+    color: #000;
+    transition: all 0.2s ease;
+    position: relative;
+    left: 0px;
+}
+
+.sidebar a:hover,
+.sidebar button:hover {
+    padding-left: 40px;
+}
+
+.active-sidebar {
+    background-color: #479f76 !important;
+}
+
+.bl_table tr th:nth-child(2n+1) {
+    background-color: #ddd;
+}
+
+.bl_table tr td:nth-child(2n+1) {
+    background-color: #ddd;
+}
+
+.ship_fieldset h1 span {
+    background: #fff;
+}
+
+.dropdown-container {
+    background-color: #479f76;
+}
+
+.dropdown-container a,
+.dropdown-container button {
+    background-color: #fff;
+}
