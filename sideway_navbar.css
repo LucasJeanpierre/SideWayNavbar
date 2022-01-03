@@ -10,7 +10,8 @@
     transition: 0.5s;
 }
 
-.sidebar a {
+.sidebar a,
+.sidebar .sidebar-div {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
@@ -19,6 +20,7 @@
 }
 
 .sidebar a,
+.sidebar .sidebar-div,
 .sidebar button {
     font-weight: 500;
 }
@@ -102,7 +104,7 @@
 }
 
 #topheader a img {
-    width: 100px;
+    width: 50px;
 }
 
 #connection_status {
@@ -120,7 +122,7 @@
 
 @media screen and (max-width: 768px) {
     #topheader a img {
-        width: 75px;
+        width: 40px;
     }
     #openbtn {
         font-size: 20px;
@@ -148,10 +150,11 @@
 }
 
 .sidebar a img {
-    width: 75px;
+    width: 40px;
 }
 
 .sidebar a,
+.sidebar .sidebar-div,
 .sidebar button {
     color: #000;
     transition: all 0.2s ease;
@@ -160,6 +163,7 @@
 }
 
 .sidebar a:hover,
+.sidebar .sidebar-div:hover,
 .sidebar button:hover {
     padding-left: 40px;
 }
@@ -185,6 +189,23 @@
 }
 
 .dropdown-container a,
+.dropdown-container .sidebar-div,
 .dropdown-container button {
     background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
